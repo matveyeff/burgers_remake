@@ -1,0 +1,24 @@
+.hero {
+	background: url(../img/bg-hero.jpg) center / cover no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__desc	{
+		display: flex;
+		flex-direction: column;
+		padding-left: 1rem;
+		line-height: 1.5;
+	}
+	&__description {
+		display: inline-flex;
+		font-family: $subtitle;
+		font-size: 4.062rem;
+		color: #fff;
+		line-height: 1;
+	}
+}

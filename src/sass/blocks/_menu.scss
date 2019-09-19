@@ -1,0 +1,42 @@
+.menu {
+	display: flex;
+	align-items: center;
+	&__nav {
+		margin-right: 15px;
+	}
+	&__list {
+		display: flex;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		margin-right: 15px;
+		&:last-child {
+			margin-right: 0;
+		}
+		&::after {
+			content: '';
+			display: block;
+			width: 5px;
+			height: 5px;
+			background-color: #fff;
+			border-radius: 50%;
+			margin-left: 15px;
+		}
+		&:last-child::after {
+			display: none;
+		}
+	}
+	&__link {
+		font-family: $text;
+		font-weight: 500;
+		font-size: 13px;
+		color: #ffffff;
+		text-transform: uppercase;
+		text-decoration: none;
+		transition: color .25s ease;
+		&:hover {
+			color: $orange_dark;
+		}
+	}
+}
