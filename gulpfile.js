@@ -58,6 +58,10 @@ function images() {
     .pipe(imagemin())
     .pipe(gulp.dest(paths.build + 'img/'));
 }
+function favicon() {
+  return gulp.src(paths.src + 'favicon.ico')
+    .pipe(gulp.dest(paths.build));
+}
 
 function fonts() {
 	return gulp.src(paths.src + 'fonts/*.*')
@@ -117,12 +121,13 @@ exports.scripts 				= scripts;
 exports.htmls 					= htmls;
 exports.fonts 					= fonts;
 exports.images 					= images;
+exports.favicon 				= favicon;
 exports.svgSprite 			= svgSprite;
 exports.clean 					= clean;
 exports.watch 					= watch;
 
 gulp.task('default', gulp.series(
   clean,
-  gulp.parallel(styles, svgSprite, scripts, htmls, images, fonts),
+  gulp.parallel(styles, svgSprite, scripts, htmls, images, favicon, fonts),
   gulp.parallel(watch, serve)
 ));

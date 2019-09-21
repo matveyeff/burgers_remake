@@ -3,22 +3,43 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	&__container {
+		display: flex;
+	}
 	&__content {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		@include tablets {
+			flex-direction: column;
+			text-align: center;
+			width: 95%;
+		}
 	}
-	&__desc	{
+	&__text	{
 		display: flex;
 		flex-direction: column;
-		padding-left: 1rem;
-		line-height: 1.5;
+		line-height: 1;
+	}
+	&__picture {
+		margin-right: 1rem;
+		@include tablets {
+			margin: 0;
+		}
+	}
+	&__burger-img {
+		@include tablets {
+			max-width: 100%;
+			height: auto;
+		}
 	}
 	&__description {
-		display: inline-flex;
 		font-family: $subtitle;
 		font-size: 4.062rem;
 		color: #fff;
 		line-height: 1;
+		letter-spacing: -1.63px;
+		@include tablets {
+			padding: 0 3rem;
+		}
 	}
 }
