@@ -18,20 +18,17 @@
 	&__text	{
 		display: flex;
 		flex-direction: column;
+		flex-basis: 50%;
 		line-height: 1;
 	}
 	&__picture {
+		flex-basis: 50%;
 		margin-right: 1rem;
 		@include tablets {
 			margin: 0;
 		}
 	}
-	&__burger-img {
-		@include tablets {
-			max-width: 100%;
-			height: auto;
-		}
-	}
+
 	&__description {
 		font-family: $subtitle;
 		font-size: 4.062rem;

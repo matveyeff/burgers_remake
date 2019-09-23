@@ -1,0 +1,13 @@
+.mobile {
+	display: none;
+	align-items: center;
+	margin-left: 2.1428rem;
+	@include tablets {
+		display: flex;
+	}
+	&__icon {
+		fill: #fff;
+		width: 1.7142rem;
+		height: 1.5714rem;
+	}
+}

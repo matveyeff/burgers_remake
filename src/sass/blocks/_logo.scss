@@ -4,4 +4,7 @@
 		width: 5.75rem;
 		height: 4.3125rem;
 	}
+	@include tablets {
+		z-index: 20;
+	}
 }

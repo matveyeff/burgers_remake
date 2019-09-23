@@ -11,4 +11,7 @@
 	&:hover {
 		background-color: $red;
 	}
+	@include tablets {
+		font-size: .75rem;
+	}
 }

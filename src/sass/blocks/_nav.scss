@@ -2,13 +2,33 @@
 	display: flex;
 	align-items: center;
 	margin-right: 0.9375rem;
+	@include tablets {
+		display: none;
+		justify-content: center;
+		align-items: center;
+		display: none;
+		background: rgba(47, 50, 52, 0.99);
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 10;
+	}
 	&__list {
 		display: flex;
+		@include tablets {
+			position: absolute;
+			display: flex;
+			flex-direction: column;
+		}
 	}
 	&__item {
 		display: flex;
 		align-items: center;
-		margin-right: 0.9375rem;
+		margin-right: 0.928571rem;
 		&:last-child {
 			margin-right: 0;
 		}
@@ -23,6 +43,15 @@
 		&:last-child::after {
 			display: none;
 		}
+		@include tablets {
+			display: flex;
+			flex-flow: column nowrap;
+			margin: 0;
+			&::after {
+				margin-bottom: 1.7857rem;
+				margin-left: 0;
+			}
+		}
 	}
 	&__link {
 		font-family: $text;
@@ -34,6 +63,11 @@
 		transition: color .25s ease;
 		&:hover {
 			color: $red;
+		}
+		@include tablets {
+			font-size: 1.7142rem;
+			font-weight: 400;
+			margin-bottom: 1.7857rem;
 		}
 	}
 }

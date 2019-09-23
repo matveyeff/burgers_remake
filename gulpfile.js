@@ -102,6 +102,7 @@ function clean() {
 function watch() {
   gulp.watch(paths.src + 'sass/**/*.scss', styles);
   gulp.watch(paths.src + '*.html', htmls);
+  gulp.watch(paths.src + 'js/*.js', scripts);
   gulp.watch(paths.src + 'img/*.{jpg,jpeg,png,gif,svg}', images);
   gulp.watch(paths.src + 'svg/*.svg', svgSprite);
 }
