@@ -3,6 +3,9 @@
 	&__list {
 		display: flex;
 		margin-top: 2.4375rem;
+		@include phones {
+			flex-direction: column;
+		}
 	}
 	&__item {
 		flex: 1;
@@ -10,9 +13,16 @@
 		flex-direction: column;
 		align-items: center;
 		padding: 0 10px;
+		@include phones {
+			flex-direction: row;
+			margin-bottom: 3.846153846153846rem;
+		}
 	}
 	&__desc {
 		text-align: center;
+		@include phones {
+			text-align: left;
+		}
 	}
 	&__title {
 		font-family: $subtitle;
@@ -29,6 +39,10 @@
 	}
 	&__img {
 		margin-bottom: 2.1875rem;
+		@include phones {
+			margin-bottom: 0;
+			margin-right: 2rem;
+		}
 	}
 	&__icon {
 		max-width: 96px;

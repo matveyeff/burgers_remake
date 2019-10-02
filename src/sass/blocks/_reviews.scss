@@ -6,15 +6,21 @@
 		height: 100%;
 	}
 	&__item {
+		position: relative;
 		flex-basis: 25%;
 		width: 25%;
 		height: 50vh;
 		background-size: cover;
 		background-position: center;
-	}
-	&__hover {
-		display: flex;
-		align-items: center;
-		height: 100%;
+		@include tablets {
+			flex-basis: 50%;
+			width: 50%;
+			height: 25vh;
+		}
+		&:hover {
+			.hover {
+				opacity: 1;
+			}
+		}
 	}
 }

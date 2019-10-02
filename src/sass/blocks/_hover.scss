@@ -1,0 +1,60 @@
+.hover {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	background: rgba(#454545,.7);
+	opacity: 0;
+	transition: opacity .25s ease;
+	&__content {
+		padding: 0 1.25rem;
+		color: #fff;
+	}
+	&__title {
+		font-family: $title;
+		font-size: 0.875rem;
+		font-weight: 400;
+		line-height: 1.75rem;
+	}
+	&__text {
+		font-size: 0.875rem;
+		font-weight: 300;
+		line-height: 1.5rem;
+		margin-bottom: 1.25rem;
+		padding-right: 1rem;
+		@include phones {
+			font-size: 1rem;
+		}
+	}
+	&__button {
+		background: #2f3234;
+		text-align: center;
+		padding: 0.8125rem 0.9375rem;
+		border-radius: 0.1875rem;
+		box-sizing: border-box;
+		color: #fff;
+		font-size: 0.8125rem;
+		text-transform: uppercase;
+		text-decoration: none;
+		&:hover {
+			background-color: #1f2122;
+			transition: .15s ease;
+		}
+		@include phones {
+			display: none;
+		}
+	}
+	&__button-mobile {
+		display: none;
+		@include phones {
+			display: inline-block;
+			background: #2f3234;
+			text-align: center;
+			padding: 0.92rem 1.2rem;
+			border-radius: 0.35rem;
+			color: #fff;
+			font-size: 1rem;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+	}
+}
