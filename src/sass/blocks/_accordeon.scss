@@ -1,6 +1,22 @@
 .accordeon {
-	max-width: 21.875rem;
+	max-width: 24rem;
 	&__item {
 		margin-bottom: 2rem;
+		&_active {
+			.employee__wrapper {
+				display: flex;
+				height: 6.25rem;;
+				@include tablets {
+					flex-direction: column;
+					height: 11.25rem;
+				}
+			}
+			.employee__link::before {
+				transform: rotate(180deg);
+			}
+			.employee__title {
+				color: $yellow;
+			}
+		}
 	}
 }

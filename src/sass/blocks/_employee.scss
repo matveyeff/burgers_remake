@@ -1,14 +1,19 @@
 .employee {
 	color: #fff;
+	&__wrapper {
+		overflow: hidden;
+		height: 0rem;
+		transition: height .25s ease;
+		will-change: height;
+	}
 	&__link {
 		display: flex;
 		align-items: center;
 		color: #fff;
 		font-family: $title;
 		text-decoration: none;
-		font-size: 1rem;
+		font-size: 0.875rem;
 		margin-bottom: 0.9375rem;
-		will-change: height;
 		&::before {
 			content: '';
 			border: 0.4rem solid transparent;
@@ -20,6 +25,7 @@
 	}
 	&__content {
 		display: flex;
+		padding-left: 1rem;
 	}
 	&__img {
 		min-width: 6.25rem;
@@ -27,6 +33,12 @@
 		background-size: cover;
 		background-position: center;
 		border-radius: 50%;
+	}
+	&__title {
+		transition: color .25s ease;
+	}
+	&__desc {
+		margin-left: 1rem;
 	}
 	&__position {
 		font-size: 0.875rem;
@@ -36,5 +48,6 @@
 	}
 	&__text {
 		font-weight: 300;
+		line-height: 1.5;
 	}
 }
