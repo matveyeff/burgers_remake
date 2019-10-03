@@ -3,6 +3,10 @@
 	&__icon {
 		width: 5.75rem;
 		height: 4.3125rem;
+		@include phones {
+			width: 7.076923076923077rem;
+			height: 5.307692307692308rem;
+		}
 	}
 	@include tablets {
 		z-index: 20;

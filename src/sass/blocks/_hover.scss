@@ -8,12 +8,21 @@
 	&__content {
 		padding: 0 1.25rem;
 		color: #fff;
+		@include phones {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 	&__title {
 		font-family: $title;
 		font-size: 0.875rem;
-		font-weight: 400;
 		line-height: 1.75rem;
+		margin-bottom: 1.25rem;
+		@include phones {
+			font-size: 1.846153846153846rem;
+			text-align: center;
+			margin-bottom: 2.307692307692308rem;
+		}
 	}
 	&__text {
 		font-size: 0.875rem;
@@ -22,7 +31,7 @@
 		margin-bottom: 1.25rem;
 		padding-right: 1rem;
 		@include phones {
-			font-size: 1rem;
+			display: none;
 		}
 	}
 	&__button {
@@ -47,8 +56,8 @@
 		display: none;
 		@include phones {
 			display: inline-block;
+			align-self: center;
 			background: #2f3234;
-			text-align: center;
 			padding: 0.92rem 1.2rem;
 			border-radius: 0.35rem;
 			color: #fff;
