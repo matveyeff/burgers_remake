@@ -27,13 +27,13 @@
 	&__title {
 		font-family: $subtitle;
 		font-size: 1.5rem;
-		color: #2f3234;
+		color: $gray;
 		margin-bottom: 1.25rem;
 	}
 	&__text {
 		font-size: 14px;
 		font-weight: 300;
-		color: #2f3234;
+		color: $gray;
 		line-height: 1.8;
 		opacity: .8;
 	}

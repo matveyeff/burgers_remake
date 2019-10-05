@@ -36,7 +36,7 @@
 			content: '';
 			width: 5px;
 			height: 5px;
-			background-color: #fff;
+			background-color: $white;
 			border-radius: 50%;
 			margin-left: 0.9375rem;
 		}
@@ -57,7 +57,7 @@
 		font-family: $text;
 		font-weight: 500;
 		font-size: 0.8125rem;
-		color: #ffffff;
+		color: $white;
 		text-transform: uppercase;
 		text-decoration: none;
 		transition: color $fast;

@@ -7,7 +7,7 @@
 	transition: opacity $fast;
 	&__content {
 		padding: 0 1.25rem;
-		color: #fff;
+		color: $white;
 		@include phones {
 			display: flex;
 			flex-direction: column;
@@ -35,18 +35,18 @@
 		}
 	}
 	&__button {
-		background: #2f3234;
+		background: $gray;
 		text-align: center;
 		padding: 0.8125rem 0.9375rem;
 		border-radius: 0.1875rem;
 		box-sizing: border-box;
-		color: #fff;
+		color: $white;
 		font-size: 0.8125rem;
 		text-transform: uppercase;
 		text-decoration: none;
 		transition: background-color $fast;
 		&:hover {
-			background-color: #1f2122;
+			background-color: $gray;
 		}
 		@include phones {
 			display: none;
@@ -57,10 +57,10 @@
 		@include phones {
 			display: inline-block;
 			align-self: center;
-			background: #2f3234;
+			background: $gray;
 			padding: 0.92rem 1.2rem;
 			border-radius: 0.35rem;
-			color: #fff;
+			color: $white;
 			font-size: 1rem;
 			text-transform: uppercase;
 			text-decoration: none;

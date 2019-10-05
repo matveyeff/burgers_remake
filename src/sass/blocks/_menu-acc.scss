@@ -23,7 +23,7 @@
 	&__cover {
 		font-size: 2.5rem;
     font-family: $title;
-    color: #fff;
+    color: $white;
     width: 5rem;
     display: flex;
     justify-content: center;
@@ -55,7 +55,7 @@
 	}
 	&__text {
 		padding: 3.75rem 2.1875rem;
-    color: #fff;
+    color: $white;
     font-size: 0.875rem;
 		line-height: 1.714;
 		min-width: 33.75rem;
