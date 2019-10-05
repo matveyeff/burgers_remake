@@ -7,7 +7,7 @@
 	text-decoration: none;
 	text-transform: uppercase;
 	background-color: $orange;
-	transition: background-color .25s ease;
+	transition: background-color $fast;
 	&:hover {
 		background-color: $red;
 	}

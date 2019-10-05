@@ -21,7 +21,7 @@
 		border-radius: 50%;
 		width: 16px;
 		height: 16px;
-		transition: border .3s cubic-bezier(.64,.28,.48,.99);
+		transition: border $fast;
 		&::after {
 			content: '';
 			display: flex;

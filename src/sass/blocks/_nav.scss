@@ -60,7 +60,7 @@
 		color: #ffffff;
 		text-transform: uppercase;
 		text-decoration: none;
-		transition: color .25s ease;
+		transition: color $fast;
 		&:hover {
 			color: $red;
 		}

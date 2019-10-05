@@ -4,7 +4,7 @@
 	height: 100%;
 	background: rgba(#454545,.7);
 	opacity: 0;
-	transition: opacity .25s ease;
+	transition: opacity $fast;
 	&__content {
 		padding: 0 1.25rem;
 		color: #fff;
@@ -44,9 +44,9 @@
 		font-size: 0.8125rem;
 		text-transform: uppercase;
 		text-decoration: none;
+		transition: background-color $fast;
 		&:hover {
 			background-color: #1f2122;
-			transition: .15s ease;
 		}
 		@include phones {
 			display: none;
