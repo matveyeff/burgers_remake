@@ -1,5 +1,10 @@
 .employee {
 	color: #fff;
+	@include tablets {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 	&__wrapper {
 		overflow: hidden;
 		height: 0rem;
@@ -22,10 +27,19 @@
 			margin-right: 0.4rem;
 			transition: .25s ease;
 		}
+		@include tablets {
+			margin-bottom: 2rem;;
+		}
 	}
 	&__content {
 		display: flex;
 		padding-left: 1rem;
+		@include tablets {
+			padding-left: 0;
+			flex-direction: column;
+			text-align: center;
+			align-items: center;
+		}
 	}
 	&__img {
 		min-width: 6.25rem;
@@ -33,12 +47,21 @@
 		background-size: cover;
 		background-position: center;
 		border-radius: 50%;
+		@include tablets {
+			margin-bottom: 1.571428571428571rem;
+		}
 	}
 	&__title {
 		transition: color .25s ease;
+		@include tablets {
+			font-size: 1.785714285714286rem;
+		}
 	}
 	&__desc {
 		margin-left: 1rem;
+		@include tablets {
+			margin-left: 0;
+		}
 	}
 	&__position {
 		font-size: 0.875rem;

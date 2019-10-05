@@ -44,13 +44,14 @@
 	&__title {
 		transform: rotate(-90deg);
     width: 90vh;
-    position: absolute;
+		position: absolute;
+		transition: color .3s cubic-bezier(.64,.28,.48,.99);
 	}
 	&__desc {
 		background: rgba(47, 50, 52, 0.93);
     width: 0;
     overflow: hidden;
-		transition: width 0.5s;
+		transition: width .3s cubic-bezier(.64,.28,.48,.99);
 	}
 	&__text {
 		padding: 3.75rem 2.1875rem;
