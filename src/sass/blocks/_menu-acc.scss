@@ -1,79 +1,55 @@
 .menu-acc {
-	position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-	display: flex;
+	height: 100%;
 	&__list {
 		display: flex;
-		justify-content: flex-end;
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
 	}
 	&__item {
 		display: flex;
-		background-color: rgba(47, 50, 52, 0.93);
-		background-size: 5rem 100%;
-		background-repeat: no-repeat;
-		width: 5rem;
-		overflow: hidden;
-		transition: width $slow;
 		&_active {
-			width: 39.0625rem;
-			@include tablets {
-				width: calc(100% - 10rem);
+			.menu-acc__wrapper {
+				width: 540px;
 			}
 			.menu-acc__title {
 				color: $yellow;
 			}
-			.menu-acc__desc {
-				opacity: 1;
-				padding: 3.9375rem 2.1875rem;
-				transition: opacity $slow .2s, padding $slow;
-			}
-		}
-		&_meat {
-			background-image: url(../img/menu-acc-01.jpg);
-		}
-		&_veget {
-			background-image: url(../img/menu-acc-02.jpg);
-		}
-		&_diet {
-			background-image: url(../img/menu-acc-03.jpg);
 		}
 	}
-	&__cover {
-		font-size: 2.5rem;
-    font-family: $title;
-		color: $white;
-		text-decoration: none;
-    width: 5rem;
-    display: flex;
-    justify-content: center;
-		align-items: center;
-		position: relative;
-		&::before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			background-color: rgba(47, 50, 52, 0.63);
-		}
+	&__wrapper {
+		width: 0;
+		overflow: hidden;
+		transition: width $slow;
+	}
+	&__trigger {
+		display: flex;
+		align-items: flex-end;
+		width: 5rem;
+		padding-bottom: 2.8125rem;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
 	}
 	&__title {
+		display: flex;
+		font-family: $title;
+		font-size: 2.5rem;
+		color: $white;
 		transform: rotate(-90deg);
+		white-space: nowrap;
+		width: 100%;
 		transition: color $slow;
 	}
-	&__desc {
+	&__content {
+		background-color: rgba(47,50,52,.93);
+		height: 100%;
+		padding: 4.0625rem 2.1875rem;
+		line-height: 1.8;
 		color: $white;
 		font-size: 0.875rem;
 		font-weight: 300;
-		opacity: 0;
-		overflow: hidden;
-		line-height: 1.8;
-		max-width: 100%;
-		@include tablets {
-			font-size: 1rem;
-		}
+		min-width: 540px;
 	}
 }
