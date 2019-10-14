@@ -12,7 +12,7 @@
 		<div class="maincontent">
 			<section class="section hero">
 				<div class="container">
-					<header class="header">
+					<header class="header" id="header">
 						<div class="logo">
 							<svg class="logo__icon">
 								<use xlink:href="img/sprite.svg#logo"></use>
@@ -31,8 +31,15 @@
 								</ul>
 							</nav>
 							<a href="#" class="button">Заказать</a>
-							<a id="mobile" href="#" class="mobile">
-								<svg class="mobile__icon">
+							<a href="#" class="hamburger" id="hamburger">
+								<ul class="hamburger__list">
+									<li class="hamburger__item"></li>
+									<li class="hamburger__item"></li>
+									<li class="hamburger__item"></li>
+								</ul>
+							</a>
+							<a class="cross" id="cross">
+								<svg class="cross__icon">
 									<use xlink:href="img/sprite.svg#cross"></use>
 								</svg>
 							</a>
@@ -54,6 +61,7 @@
 					</svg>
 				</a>
 			</section>
+			
 			<section class="section best">
 				<div class="container">
 					<h2 class="title title_color-black">Мы лучшие</h2>
@@ -103,7 +111,7 @@
 
 			<section class="section burgers">
 				<div class="container">
-					
+
 				</div>
 			</section>
 			<!-- /.section burgers -->

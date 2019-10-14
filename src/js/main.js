@@ -1,12 +1,22 @@
 // Hamburger Menu
 
-var hamburger = document.getElementById('mobile');
+var hamburger = document.getElementById('hamburger');
 var open = document.getElementById('nav');
 var style = open.style;
 
 hamburger.addEventListener('click', function() {
 	style.display = 'flex';
 	hamburger.style.display = 'none';
+	crossicon.style.display = 'flex';
+})
+
+var crossicon = document.getElementById('cross');
+
+crossicon.addEventListener('click', function() {
+	crossicon.style.display = 'none';
+	style.display = 'none';
+	hamburger.style.display = 'flex';
+	document.getElementById('header').style.position = '';
 })
 
 // Team Accordeon

@@ -1,4 +1,7 @@
 .pagination {
+	@include tablets {
+		display: none;
+	}
 	position: fixed;
 	right: 3.125rem;
 	top: 6.25rem;
