@@ -27,6 +27,10 @@ body {
 img, embed, object, video {
 	max-width: 100%;
 }
+svg {
+	max-width: 100%;
+	max-height: 100%;
+}
 
 a {
 	text-decoration: none;
@@ -79,10 +83,11 @@ h6 {
 	color: $yellow;
 	font-size: 4.5rem;
 	margin-bottom: 20px;
-	&_color-black {
+	line-height: 1;
+	&_black {
 		color: $gray;
 	}
-	&_color-white {
+	&_white {
 		color: $white;
 	}
 }
