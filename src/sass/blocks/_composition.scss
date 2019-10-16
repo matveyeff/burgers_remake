@@ -1,0 +1,39 @@
+.composition {
+	display: flex;
+	width: 16.875rem;
+	background-color: rgba($white, .9);
+	position: absolute;
+	left: 5.625rem;
+	top: 0;
+	border-radius: 8px;
+	padding: 2rem;
+	visibility: hidden;
+	&__list {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 1rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__icon {
+		max-width: 44px;
+		max-height: 43px;
+	}
+	&__title {
+		color: $gray;
+		font-size: 0.875rem;
+		font-weight: 500;
+	}
+	&__weight {
+		justify-self: flex-end;
+		color: $gray;
+		font-weight: 300;
+	}
+}

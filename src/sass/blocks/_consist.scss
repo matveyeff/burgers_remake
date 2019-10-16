@@ -11,6 +11,13 @@
 	text-align: center;
 	background-color: rgba($orange,.4);
 	border-radius: 8px;
+	transition: background-color $fast;
+	&:hover {
+		background-color: rgba($orange,1);
+		.composition {
+			visibility: visible;
+		}
+	}
 	&__icon {
 		width: 46px;
 		height: 44px;
