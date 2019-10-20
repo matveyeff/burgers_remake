@@ -16,18 +16,17 @@
 	}
 	&__switch {
 		display: flex;
-		width: 27px;
-		height: 13px;
-		&_left {
-			transform: rotate(90deg);
-		}
-		&_right {
-			transform: rotate(-90deg);
+		background: url('../img/arrow-slider.png') center no-repeat;
+		width: 18px;
+		height: 27px;
+		&_next {
+			transform: rotate(180deg);
 		}
 	}
 	&__list {
 		display: flex;
 		position: relative;
+		transition: $slow;
 	}
 	&__item {
 		display: flex;
