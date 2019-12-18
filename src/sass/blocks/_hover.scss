@@ -5,6 +5,7 @@
 	background: rgba(#454545,.7);
 	opacity: 0;
 	transition: opacity $fast;
+	
 	&__content {
 		padding: 0 1.25rem;
 		color: $white;
@@ -13,6 +14,7 @@
 			flex-direction: column;
 		}
 	}
+
 	&__title {
 		font-family: $title;
 		font-size: 0.875rem;
@@ -24,6 +26,7 @@
 			margin-bottom: 2.307692307692308rem;
 		}
 	}
+
 	&__text {
 		font-size: 0.875rem;
 		font-weight: 300;
@@ -34,8 +37,9 @@
 			display: none;
 		}
 	}
+
 	&__button {
-		background: $gray;
+		background-color: #2f3234;
 		text-align: center;
 		padding: 0.8125rem 0.9375rem;
 		border-radius: 0.1875rem;
@@ -45,13 +49,16 @@
 		text-transform: uppercase;
 		text-decoration: none;
 		transition: background-color $fast;
+
 		&:hover {
 			background-color: $gray;
 		}
+
 		@include phones {
 			display: none;
 		}
 	}
+
 	&__button-mobile {
 		display: none;
 		@include phones {

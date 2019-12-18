@@ -98,3 +98,25 @@ for (var i = 0; i < acc.length; i++) {
 		}
 	})
 })('#slider')
+
+// Popup
+
+var openButton = document.querySelectorAll('.hover__button');
+var overlay = document.querySelector('.reviews-popup');
+var close = document.querySelector('.reviews-popup__close');
+
+for (var i = 0; i < openButton.length; i++) {
+	openButton[i].addEventListener('click', openOverlay);
+}
+
+function openOverlay(e) {
+	e.preventDefault();
+	overlay.style.display = 'flex';
+}
+
+close.addEventListener('click', closeOverlay);
+
+function closeOverlay(e) {
+	e.preventDefault();
+	overlay.style.display = 'none';
+}

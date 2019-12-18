@@ -1,0 +1,43 @@
+.reviews-popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	background: rgba(#2f3234, .92);
+	z-index: 99;
+
+	&__content {
+		position: relative;
+		background-color: $white;
+		max-width: 28.75rem;
+		padding: $gutter;
+		border-radius: .1875rem;
+	}
+
+	&__title {
+		font-family: $title;
+		font-size: .875rem;
+		color: #2f3234;
+		margin-bottom: $gutter;
+	}
+
+	&__text {
+		font-family: $text;
+		font-size: .875rem;
+		font-weight: 300;
+		color: #2f3234;
+		line-height: 1.5;
+	}
+
+	&__close {
+		max-width: .9375rem;
+		max-height: .9375rem;
+		position: absolute;
+		top: $gutter;
+		right: $gutter;
+	}
+}

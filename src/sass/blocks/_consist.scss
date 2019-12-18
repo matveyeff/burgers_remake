@@ -14,6 +14,7 @@
 	transition: background-color $fast;
 	&:hover {
 		background-color: rgba($orange,1);
+		cursor: pointer;
 		.composition {
 			visibility: visible;
 		}
